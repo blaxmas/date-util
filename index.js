@@ -220,5 +220,5 @@ Date.prototype.format = function (mask, utc) {
 };
 
 Date.prototype.strtotime = function (string) {
-	return strtotime(string, this);
+	return strtotime(string, this.getTime()/1000);
 };
